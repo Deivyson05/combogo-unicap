@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    background-color: var(--bkg2);      
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & nav{
+        
+        display: flex;
+        gap: 1rem;
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        & a {
+            text-decoration: none;
+        }
+    
+        
+    }
+
+    & div a{
+        text-decoration: none;
+    }
+
+    & img {
+        height: auto;
+        width: 8rem;
+    }
+}

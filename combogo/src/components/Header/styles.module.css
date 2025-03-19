@@ -30,6 +30,8 @@
             text-decoration: none;
             color: var(--txt);
             font-weight: 600;
+
+            border-bottom: solid 3px;
         }
 
         

@@ -18,19 +18,19 @@ export function Footer() {
             </nav>
 
             <div>
-                <a href="#">
-                    <InstagramLogo size={32} />
+            <a href="https://www.instagram.com/combogounicap/" target="_blank">
+                    <InstagramLogo size={32}/>
                 </a>
 
-                <a href="#">
-                    <YoutubeLogo size={32} />
+                <a href="https://www.youtube.com/@combogounicap" target="_blank">
+                    <YoutubeLogo size={32}/>
                 </a>
-
-                <a href="#"> <Envelope size={32} />
+                
+                <a href="mailto:combogo.unicap@unicap.br"> <Envelope size={32}/>
                 </a>
-
-                <a href="#">
-                    <LinkedinLogo size={32} />
+                
+                <a href="https://www.linkedin.com/company/combog%C3%B3-unicap" target="_blank">
+                    <LinkedinLogo size={32}/>
                 </a>
             </div>
         </footer>

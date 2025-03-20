@@ -17,7 +17,7 @@
     align-items: center; 
     text-align: center; 
 
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .about p {
@@ -55,21 +55,54 @@
 
 
 .button {
-    display: inline-block;
+    padding: 0.8em 1.8em;
+    border: 2px solid var(--principal);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: var(--principal);
+    text-decoration: none;
+
+    /* display: inline-block;
     background-color: transparent;
     color: #fff;
     border: 1px solid #FF6600;
     padding: 10px 20px;
     margin-top: 15px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s; */
 
 }
 
+.button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: var(--principal);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+    
+}
+
+.button:hover::before {
+    width: 105%;
+}
+   
 .button:hover {
-    background-color: #FF6600;
-    color: white;
+    color: #fff;
 }
+
 
 .Card {
     display: flex;

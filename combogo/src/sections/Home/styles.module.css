@@ -3,17 +3,16 @@
     padding: 0;
 }
 
-@keyframes moverParaBaixo {
+@keyframes scroll {
     0% {
-        bottom: 10%; /* posição inicial */
+      transform: translateY(0);
     }
-    50% {
-        bottom: 12%; /* posição para onde a seta vai se mover */
+  
+    30% {
+      transform: translateY(3.75rem);
     }
-    100% {
-        bottom: 10%; /* posição para onde a seta vai se mover */
-    }
-}
+  }
+  
 
 .container {
     display: flex;
@@ -42,9 +41,13 @@
         bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
-        animation: moverParaBaixo 2s infinite ease-in-out;
+        transform: scale(10px);
+        
         
     }
+
+    
+
 
 
     & .slideContainer {
@@ -87,3 +90,40 @@
 
     
 }
+
+.btn {
+    width: 30px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    outline: 2px solid ;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transform: scale(0.7);
+  }
+  
+  .scroll {
+    width: 5px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    animation: scroll_4013 2s linear infinite;
+    transform: translateY(-50%);
+  }
+  
+  @keyframes scroll_4013 {
+    0% {
+      transform: translateY(-50%);
+    }
+  
+    50% {
+      transform: translateY(-100%);
+    }
+  };

@@ -11,7 +11,7 @@ export function About() {
                          
                         <p>Criada em outubro de 2016, a Combogó Unicap é uma agência de soluções interativas que tem como objetivo o desenvolvimento de resoluções criativas para problemas reais, através de inovação e engenhosidade.</p>
                     </div>
-                    <a href="#" className={styles.button}>Saiba Mais</a>
+                    <a href="https://portal.unicap.br/w/combogo" target="_blank" className={styles.button}>Saiba Mais</a>
                 
             </section>
             

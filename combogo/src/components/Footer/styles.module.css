@@ -22,6 +22,10 @@ footer {
         
     }
 
+    & div {
+        display: none;
+    }
+
     & div a{
         text-decoration: none;
     }

@@ -1,23 +1,27 @@
 import styles from "./styles.module.css";
+import { useTranslation } from "react-i18next";
+import "../../i18n";
 
 export function About() {
+    const {t, i18n} = useTranslation();
+
     return (
         <section className={styles.container} id="sobre">                                                                      
             <section className={styles.about}>
                 
-                <h1>Sobre a Combogó</h1>
+                <h1>{t("about.title")}</h1>
                     <div className={styles.paragraph}>
-                        <p>A Combogó é um grande projeto de extensão do curso de Jogos Digitais da Universidade Católica de Pernambuco. Realizamos trabalhos na área de Design, Computação e Jogos.</p>
+                        <p>{t("about.p1")}</p>
                          
-                        <p>Criada em outubro de 2016, a Combogó Unicap é uma agência de soluções interativas que tem como objetivo o desenvolvimento de resoluções criativas para problemas reais, através de inovação e engenhosidade.</p>
+                        <p>{t("about.p2")}</p>
                     </div>
-                    <a href="https://portal.unicap.br/w/combogo" target="_blank" className={styles.button}>Saiba Mais</a>
+                    <a href="https://portal.unicap.br/w/combogo" target="_blank" className={styles.button}>{t("about.button")}</a>
                 
             </section>
             
             <div className={styles.Card}>
                 <h2>+20</h2>
-                <p>Projetos</p>
+                <p>{t("about.card.title")}</p>
             </div>
         </section>
     );

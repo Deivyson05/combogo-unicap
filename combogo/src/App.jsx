@@ -7,6 +7,7 @@ import {Home} from './sections/Home';
 import {About} from './sections/About';
 import {Projects} from './sections/Projects';
 import {Footer} from './components/Footer';
+import {Idioma} from './components/Idioma';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Projects/>
       <Footer />
+      <Idioma />
     </>
   )
 }

@@ -5,7 +5,11 @@ import { useEffect, useState } from 'react';
 
 import Logo from "../../assets/logo.png";
 
+import { useTranslation } from "react-i18next";
+import "../../i18n";
+
 export function Header() {
+    const {t, i18n} = useTranslation();
 
     const [activeSection, setActiveSection] = useState(null);
 
@@ -35,14 +39,16 @@ export function Header() {
 
     }, []);
 
+    
+
     return (
         <header className={styles.header}>
             <img src={Logo} alt="logo Combogó" />
 
             <nav>
-                <a href="#home" style={{borderColor: activeSection === 'home' ? '#F5821F' : 'gray'}}>Home</a>
-                <a href="#sobre" style={{borderColor: activeSection === 'sobre' ? '#F5821F' : 'gray'}}>Sobre nós</a>
-                <a href="#projetos" style={{borderColor: activeSection === 'projetos' ? '#F5821F' : 'gray'}}>Projetos</a>
+                <a href="#home" style={{borderColor: activeSection === 'home' ? '#F5821F' : 'gray'}}>{t("header.nav.home")}</a>
+                <a href="#sobre" style={{borderColor: activeSection === 'sobre' ? '#F5821F' : 'gray'}}>{t("header.nav.about")}</a>
+                <a href="#projetos" style={{borderColor: activeSection === 'projetos' ? '#F5821F' : 'gray'}}>{t("header.nav.projects")}</a>
             </nav>
 
             <div>

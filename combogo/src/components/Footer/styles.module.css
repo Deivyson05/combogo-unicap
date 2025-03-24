@@ -1,37 +1,55 @@
-footer {
+.footer {
     width: 100%;
-    background-color: var(--bkg2);      
+    background-color: var(--bkg2);
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
-    & nav{
-        
-        display: flex;
+/* Ajusta a logo */
+.footer img {
+    height: auto;
+    width: 8rem;
+}
+
+/* Estiliza a navegação */
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: var(--principal);
+}
+
+/* Ícones sociais */
+.socialLinks {
+    display: flex;
+    gap: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
-
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    
-        & a {
-            text-decoration: none;
-        }
-    
-        
     }
 
-    & div {
-        display: none;
+    .nav {
+        flex-direction: column;
     }
 
-    & div a{
-        text-decoration: none;
-    }
-
-    & img {
-        height: auto;
-        width: 8rem;
+    .socialLinks {
+        justify-content: center;
     }
 }

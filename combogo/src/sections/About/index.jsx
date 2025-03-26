@@ -9,11 +9,13 @@ export function About() {
         <section className={styles.container} id="sobre">                                                                      
             <section className={styles.about}>
                 
-                <h1>{t("about.title")}</h1>
+                <h2>{t("about.title")}</h2>
                     <div className={styles.paragraph}>
                         <p>{t("about.p1")}</p>
                          
                         <p>{t("about.p2")}</p>
+
+                        
                     </div>
                     <a href="https://portal.unicap.br/w/combogo" target="_blank" className={styles.button}>{t("about.button")}</a>
                 

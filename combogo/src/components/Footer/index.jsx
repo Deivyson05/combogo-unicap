@@ -9,32 +9,43 @@ export function Footer() {
     const { t } = useTranslation();
     return (
         <footer className={styles.footer}>
-            
-            <img src={Logo} alt="logo Combogó" />
-
-            <nav className={styles.nav}>
-                <a href="#sobre" className={styles.navLink}>{t("header.nav.about")}</a>
-                <a href="#projetos" className={styles.navLink}>{t("header.nav.projects")}</a>
-                <a href="https://maps.app.goo.gl/XCBGHneTdD1Zgqom8" target='_blank' className={`${styles.navLink}`}>Endereço</a>
-            </nav>
-
-            
-
-            <div className={styles.socialLinks}>
-                <a href="https://www.instagram.com/combogounicap/" target="_blank">
-                    <InstagramLogo size={32} />
-                </a>
-                <a href="https://www.youtube.com/@combogounicap" target="_blank">
-                    <YoutubeLogo size={32} />
-                </a>
-                <a href="mailto:combogo.unicap@unicap.br" >
-                    <Envelope size={32} />
-                </a>
-                <a href="https://www.linkedin.com/company/combog%C3%B3-unicap" target="_blank">
-                    <LinkedinLogo size={32} />
-                </a>
+            <div className={styles.divlogo}>
+                <img src={Logo} alt="logo" />
+                <nav>
+                    <a href="#home">{t("header.nav.home")}</a>
+                    <span>/</span>
+                    <a href="#sobre">{t("header.nav.about")}</a>
+                    <span>/</span>
+                    <a href="#projetos">{t("header.nav.projects")}</a>
+                </nav>
             </div>
+            <div className={styles.div1}>
+                <div>
+                    <strong>Contact Us</strong>
+                    <span>(+55) 81 2119-4016</span>
+                </div>
 
+                <div>
+                    <strong>Email</strong>
+                    <span>combogo.unicap@unicap.br</span>
+                </div>
+            </div>
+            <div className={styles.div1}>
+                <div>
+                    <strong>{t("footer.address")}</strong>
+                    <span>R. do Principe, 526 - Boa Vista - Recife, PE - Cep: 50050-900 - Bloco R, Sala 117.</span>
+                </div>
+
+                <div>
+                    <strong>Opening hours</strong>
+                    <span>9am - 6pm</span>
+                </div>
+            </div>
+            <div className={styles.div1}>
+            <span className={styles.copy}>
+                © 2025 - Copyright
+            </span>
+            </div>
             
         </footer>
     );

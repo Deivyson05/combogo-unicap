@@ -27,5 +27,7 @@
     "projects.categories.Plataforma": "Platform",
     "projects.categories.App": "App",
     "projects.categories.Simulacao": "Simulation",
-    "projects.categories.Outro": "Other"
+    "projects.categories.Outro": "Other",
+
+    "footer.address": "Address"
 }

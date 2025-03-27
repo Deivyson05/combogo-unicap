@@ -23,3 +23,9 @@
     }
 
 }
+
+@media (min-width: 2100px) {
+    .container div {
+        width: 60%;
+    }
+}

@@ -261,3 +261,9 @@
 
 
 }
+
+@media (min-width: 2100px) {
+    .about {
+        width: 30%;
+    }
+}

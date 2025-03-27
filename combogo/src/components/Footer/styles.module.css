@@ -1,71 +1,68 @@
 .footer {
     width: 100%;
     background-color: var(--bkg2);
-    padding: 1.5rem;
+    padding: 4rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
 
-/* Ajusta a logo */
-.footer img {
-    height: auto;
-    width: 8rem;
-}
-
-/* Estiliza a navegação */
-.nav {
-    display: flex;
-    gap: 1rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.navLink {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.navLink:hover {
-    color: var(--principal);
-}
-
-/* Ícones sociais */
-.socialLinks {
-    display: none;
-    gap: 0.8rem;
-
-    
-}
-
-.footer .end {
-    margin-right: 6rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    & img {
+        width: 143.45px;
+        height: auto;
     }
 
-    .nav {
-        flex-direction: column;
-        position:static;
-        transform: translateX(0);
-    }
-
-    .socialLinks {
+    & .divlogo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        & nav {
+            display: flex;
+            gap: 0.5rem;
+
+            & span {
+                color: var(--principal);
+    
+            }
+
+            & a {
+                gap: 1rem;
+                text-decoration: none;
+                color: white;
+                transition: color 0.3s ease;
+            }
+
+            & a:hover {
+                color: var(--principal);
+            }
+        }
     }
 
-    .footer .end {
-        margin-right: 0;
+    & .div1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 2rem;
+
+        height: 245px;
+
+        
+
+
+
+        & div {
+            display: flex;
+            flex-direction: column;
+
+            & strong {
+                font-weight: 350;
+                color: #D4D5D9;
+            }
+            
+            & span {
+                font-size: 16px;
+                
+            }
+        }
     }
+    
 }

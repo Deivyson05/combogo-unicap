@@ -19,34 +19,37 @@ export function Footer() {
                     <a href="#projetos">{t("header.nav.projects")}</a>
                 </nav>
             </div>
-            <div className={styles.div1}>
-                <div>
-                    <strong>Contact Us</strong>
-                    <span>(+55) 81 2119-4016</span>
-                </div>
+            <div className={styles.div2}>
+                <div className={styles.div1}>
+                    <div>
+                        <strong>{t("footer.contact")}</strong>
+                        <span>(+55) 81 2119-4016</span>
+                    </div>
 
-                <div>
-                    <strong>Email</strong>
-                    <span>combogo.unicap@unicap.br</span>
+                    <div>
+                        <strong>{t("footer.email")}</strong>
+                        <span>combogo.unicap@unicap.br</span>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.div1}>
-                <div>
-                    <strong>{t("footer.address")}</strong>
-                    <span>R. do Principe, 526 - Boa Vista - Recife, PE - Cep: 50050-900 - Bloco R, Sala 117.</span>
-                </div>
+                <div className={styles.div1}>
+                    <div>
+                        <strong>{t("footer.address")}</strong>
+                        <span>R. do Principe, 526 - Boa Vista - Recife, PE - Cep: 50050-900 - Bloco R, Sala 117.</span>
+                    </div>
 
-                <div>
-                    <strong>Opening hours</strong>
-                    <span>9am - 6pm</span>
+                    <div>
+                        <strong>{t("footer.open")}</strong>
+                        <span>9am - 6pm</span>
+                    </div>
                 </div>
             </div>
+
             <div className={styles.div1}>
-            <span className={styles.copy}>
-                © 2025 - Copyright
-            </span>
+                <span className={styles.copy}>
+                    © 2025 - Copyright
+                </span>
             </div>
-            
+
         </footer>
     );
 }

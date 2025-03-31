@@ -29,5 +29,8 @@
     "projects.categories.Simulacao": "Simulation",
     "projects.categories.Outro": "Other",
 
-    "footer.address": "Address"
+    "footer.address": "Address",
+    "footer.contact": "Contact Us",
+    "footer.email": "Email",
+    "footer.open": "Opening hours"
 }

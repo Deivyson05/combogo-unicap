@@ -29,6 +29,10 @@
     "projects.categories.Simulacao": "Simulação",
     "projects.categories.Outro": "Outro",
 
-    "footer.address": "Endereço"
+    "footer.address": "Endereço",
+    "footer.contact": "Entre em Contato",
+    "footer.email": "Email",
+    "footer.open": "Horário de Funcionamento"
+
     
 }

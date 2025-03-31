@@ -102,12 +102,21 @@
         flex-direction: column;
 
         & .copy {
-            transform: translateY(0rem);
+            position: sticky;
+            transform: translateY(0);
         }
 
         & .divlogo {
             flex-direction: row;
             align-items: center;
+        }
+
+        & .div1 {
+            height: fit-content;
+        }
+
+        & .div2 {
+            gap: 1rem;
         }
     }
 }

@@ -1,14 +1,11 @@
 .footer {
     width: 100%;
     background-color: var(--bkg2);
-    padding: 4rem;
+    padding: 4rem 10rem;
     display: flex;
     justify-content: space-between;
 
-    & img {
-        width: 143.45px;
-        height: auto;
-    }
+    
 
     & .copy {
         position: absolute;
@@ -17,28 +14,19 @@
 
     & .divlogo {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        & nav {
-            display: flex;
-            gap: 0.5rem;
-
-            & span {
-                color: var(--principal);
-    
-            }
-
-            & a {
-                gap: 1rem;
-                text-decoration: none;
-                color: white;
-                transition: color 0.3s ease;
-            }
-
-            & a:hover {
-                color: var(--principal);
-            }
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        width: 30%;
+        
+        
+        gap: 2rem;
+        & img {
+            width: 12rem;
+            height: auto;
         }
+        
     }
 
     & .div1 {
@@ -81,10 +69,16 @@
     
 }
 
+@media (max-width: 1486px) {
+    .footer {
+        padding: 4rem 4rem;
+    }
+}
+
 /*1250*/
 @media (max-width: 1250px) {
     .footer {
-
+        padding: 4rem 4rem;
         & .copy {
             transform: translateY(10rem);
         }
@@ -109,6 +103,8 @@
         & .divlogo {
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
         }
 
         & .div1 {
@@ -118,6 +114,12 @@
         & .div2 {
             gap: 1rem;
         }
+    }
+}
+
+@media (max-width: 700px) {
+    .footer .divlogo {
+        flex-wrap: wrap;
     }
 }
 

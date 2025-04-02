@@ -3,21 +3,18 @@ import styles from "./styles.module.css";
 import { InstagramLogo, YoutubeLogo, Envelope, LinkedinLogo } from 'phosphor-react';
 import { useTranslation } from "react-i18next";
 import "../../i18n";
-import Logo from "../../assets/logo.png";
+import LogoCombogo from "../../assets/logo.png";
+import LogoUnicap from "../../assets/unicap-logo.png";
+import CursoLogo from "../../assets/curso-logo.png";
 
 export function Footer() {
     const { t } = useTranslation();
     return (
         <footer className={styles.footer}>
             <div className={styles.divlogo}>
-                <img src={Logo} alt="logo" />
-                <nav>
-                    <a href="#home">{t("header.nav.home")}</a>
-                    <span>/</span>
-                    <a href="#sobre">{t("header.nav.about")}</a>
-                    <span>/</span>
-                    <a href="#projetos">{t("header.nav.projects")}</a>
-                </nav>
+                <img src={CursoLogo} alt="" />
+                <img src={LogoUnicap} alt="" />
+                <img src={LogoCombogo} alt="logo combogo" />
             </div>
             <div className={styles.div2}>
                 <div className={styles.div1}>

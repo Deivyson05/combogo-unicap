@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { InstagramLogo, YoutubeLogo, Envelope, LinkedinLogo, List, X } from "phosphor-react";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/favicon.svg";
 
 export function Header() {
     const { t } = useTranslation();

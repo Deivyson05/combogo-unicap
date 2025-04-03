@@ -12,9 +12,15 @@ export function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.divlogo}>
-                <img src={CursoLogo} alt="" />
-                <img src={LogoUnicap} alt="" />
+                <a href="https://portal.unicap.br/w/jogos-digitais" target='_blank'>
+                <img src={CursoLogo} alt="logo curso de jogos" />
+                </a>
+                <a href="https://portal.unicap.br/" target='_blank'>
+                <img src={LogoUnicap} alt="logo unicap" />
+                </a>
+                <a href="#home">
                 <img src={LogoCombogo} alt="logo combogo" />
+                </a>
             </div>
             <div className={styles.div2}>
                 <div className={styles.div1}>
@@ -41,11 +47,9 @@ export function Footer() {
                 </div>
             </div>
 
-            <div className={styles.div1}>
-                <span className={styles.copy}>
+            <span className={styles.copy}>
                     © 2025 - Copyright
                 </span>
-            </div>
 
         </footer>
     );

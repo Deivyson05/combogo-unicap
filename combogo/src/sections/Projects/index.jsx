@@ -16,7 +16,6 @@ import { useTranslation } from "react-i18next";
 import "../../i18n";
 
 
-
 export function Projects() {
     const {t, i18n} = useTranslation();
 
@@ -84,6 +83,7 @@ export function Projects() {
                     nome = {t("projects.card.CorreAscensinho")}
                     categoria={[t("projects.categories.Plataforma")]}
                 />
+
             </div>
         </section>
     )}

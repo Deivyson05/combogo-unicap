@@ -33,5 +33,8 @@
     "footer.address": "Address",
     "footer.contact": "Contact Us",
     "footer.email": "Email",
-    "footer.open": "Opening hours"
+    "footer.open": "Opening hours",
+
+    "footer.open.hour": "9am",
+    "footer.close.hour": "6pm"
 }

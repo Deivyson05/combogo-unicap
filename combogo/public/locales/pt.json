@@ -33,7 +33,8 @@
     "footer.address": "Endereço",
     "footer.contact": "Entre em Contato",
     "footer.email": "Email",
-    "footer.open": "Horário de Funcionamento"
+    "footer.open": "Horário de Funcionamento",
 
-    
+    "footer.open.hour": "9h",
+    "footer.close.hour": "18h"
 }

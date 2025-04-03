@@ -26,7 +26,7 @@ export function Footer() {
                 <div className={styles.div1}>
                     <div>
                         <strong>{t("footer.contact")}</strong>
-                        <span>(+55) 81 2119-4016</span>
+                        <span>(+55) 81 2119-4402</span>
                     </div>
 
                     <div>
@@ -42,7 +42,7 @@ export function Footer() {
 
                     <div>
                         <strong>{t("footer.open")}</strong>
-                        <span>9am - 6pm</span>
+                        <span>{t("footer.open.hour")} - {t("footer.close.hour")}</span>
                     </div>
                 </div>
             </div>

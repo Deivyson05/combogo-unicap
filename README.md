@@ -1,33 +1,11 @@
 # Landing Page Combogó
+Este é um projeto de landing page desenvolvido para a Combogó, agência de jogos da Universidade Católica de Pernambuco (UNICAP), sob solicitação da Reitoria. A página foi criada com foco em design moderno, responsividade e clareza nas informações institucionais.
 
-## Organização dos componentes
-- components
-  - Header
-    - index.jsx
-    - styles.module.css
-  - Card
-    - index.jsx
-    - styles.module.css
+## Tecnologias
+- ReactJs
+- JavaScript
+- CSS
 
-index.jsx
-```
-  import styles from './styles.module.css';
-  export function Header() {
-    return(
-      <header className={styles.container}>
-        <h1>Logo</h1>
-      </header>
-    );
-  }
-```
-styles.module.css
-```
-  .container {
-    display: flex;
-    align-itens: center;
+## Objetivo
+O projeto teve como finalidade apresentar de forma institucional as ações e a comunicação da reitoria da UNICAP, integrando-se visualmente com a identidade da Combogó. Foi desenvolvido como parte de uma iniciativa acadêmica.
 
-    & h1 {
-      font-size: 2rem;
-    }
-  }
-```

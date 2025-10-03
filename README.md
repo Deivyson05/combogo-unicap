@@ -1,5 +1,5 @@
 
-![Capa](/capa.png)
+![Capa]([/capa.png](https://github.com/Deivyson05/combogo-unicap/blob/main/capa.png?raw=true))
 
 # Landing Page Combogó
 Este é um projeto de landing page desenvolvido para a Combogó, agência de jogos da Universidade Católica de Pernambuco (UNICAP), sob solicitação da Reitoria. A página foi criada com foco em design moderno, responsividade e clareza nas informações institucionais.

@@ -8,36 +8,36 @@ export function CardProjeto({ img, nome, categoria, link }) {
             <div>
                 {
                     categoria.map((cat, index) => {
-                        if (cat == "Aventura" || cat == "Adventure") {
+                        if (cat.pt == "Aventura" || cat.pt == "Adventure") {
                             return <span
                                 key={index}
                                 style={{ background: "rgba(185, 3, 33, 0.72)" }}
-                            >{cat}</span>
-                        } else if (cat == "RPG") {
+                            >{cat.pt}</span>
+                        } else if (cat.pt == "RPG") {
                             return <span
                                 key={index}
                                 style={{ background: "rgba(3, 145, 185, 0.72)" }}
-                            >{cat}</span>
-                        } else if (cat == "Simulação" || cat == "Simulation") {
+                            >{cat.pt}</span>
+                        } else if (cat.pt == "Simulação" || cat.pt == "Simulation") {
                             return <span
                                 key={index}
                                 style={{ background: "rgba(3, 76, 185, 0.72)" }}
-                            >{cat}</span>
-                        } else if (cat == "App") {
+                            >{cat.pt}</span>
+                        } else if (cat.pt == "App") {
                             return <span
                                 key={index}
                                 style={{ background: "#715D4C" }}
-                            >{cat}</span>
-                        } else if (cat == "Educacional" || cat == "Educational") {
+                            >{cat.pt}</span>
+                        } else if (cat.pt == "Educacional" || cat.pt == "Educat.ptional") {
                             return <span
                                 key={index}
                                 style={{ background: "rgba(21, 29, 116, 0.61)" }}
-                            >{cat}</span>
+                            >{cat.pt}</span>
                         } else {
                             return <span
                                 key={index}
                                 style={{ background: "#A544CB" }}
-                            >{cat}</span>
+                            >{cat.pt}</span>
                         }
 
                     })
